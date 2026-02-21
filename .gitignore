@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Django stuff
+*.log
+db.sqlite3
+/media/
+staticfiles/
+static/
+
+# VS Code
+.vscode/
+
+# MySQL credentials (if any)
+*.env
+.env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PyCharm
+.idea/
+
+# Migrations (optional – only ignore if you want)
+# **/migrations/
+# !**/migrations/__init__.py
+
+# Compiled
+*.mo
+*.pot
+
+# Cache
+cache/

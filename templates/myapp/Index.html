@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookmark Manager</title>
+</head>
+<body>
+
+<h2>All Bookmarks</h2>
+
+<a href="/insert/">Add Bookmark</a>
+<br><br>
+
+<table border="1">
+    <tr>
+        <th>Title</th>
+        <th>URL</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for b in data %}
+    <tr>
+        <td>{{ b.title }}</td>
+        <td><a href="{{ b.url }}" target="_blank">Open</a></td>
+        <td>
+            <a href="/update/{{ b.id }}/">Edit</a> |
+            <a href="/delete/{{ b.id }}/">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
